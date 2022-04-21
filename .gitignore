@@ -1,0 +1,6 @@
+# Pytest stuff
+.pytest_cache/
+
+# Ignore test coverage files
+htmlcov/
+.coverage
