@@ -11,8 +11,8 @@ help:
 	@echo "usage:"
 	@echo "   make <target>"
 	@echo "targets:"
-	@echo "   install        Install project dependencies and git pre-commit hooks"
-	@echo "   run            Run development server at http://localhost:5000"
+	@echo "   install        Install project dependencies"
+	@echo "   run            Run development server at http://localhost:5001"
 	@echo "   test           Run all available tests of the project"
 	@echo "   help           List usage and available targets"
 
@@ -26,4 +26,4 @@ run:
 
 # Runs all tests of the project
 test:
-	pipenv run pytest --cov=src --cov-report=html --cov-report=term --cov-branch test/
+	pipenv run pytest --cov=src --cov-report=html --cov-report=term --cov-branch tests/

@@ -8,6 +8,7 @@ flask = "*"
 flask-sqlalchemy = "*"
 pytest = "*"
 pytest-mock = "*"
+pytest-cov = "*"
 
 [dev-packages]
 
