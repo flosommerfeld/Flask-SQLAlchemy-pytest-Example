@@ -11,3 +11,4 @@ are installed on your system.
 ## Quick Start
 - Run `make install` to install the projects dependencies.
 - Run `make run` to run the server.
+- Run `make test` to run the tests.
