@@ -3,7 +3,7 @@ Example for unit testing Flask applications with pytest when the function under 
 
 ## Example
 ### Flask application
-```
+```python
 app = Flask(__name__) # instantiate app
 app.config.from_object("config.TestingConfig") # load testing config from config.py
 db = SQLAlchemy() # instantiate sqlalchemy
@@ -22,7 +22,7 @@ def get_value():
 
 ### Testing
 #### Test case
-```
+```python
 def test_get_value(flask_app_mock, mock_my_model, mock_get_sqlalchemy):
     """ This test will call the function under test (get_value()) and succeeds if
     get_value() returns the ID of MyModel which shall be 'my_mock_id'."""
@@ -37,7 +37,7 @@ def test_get_value(flask_app_mock, mock_my_model, mock_get_sqlalchemy):
 ```
 
 #### Test configuration
-```
+```python
 @pytest.fixture
 def mock_my_model():
     """ 
